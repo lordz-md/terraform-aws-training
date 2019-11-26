@@ -4,3 +4,5 @@ vars.tf
 *.pub
 *.exe
 *.json
+*.tfstate
+*.backup

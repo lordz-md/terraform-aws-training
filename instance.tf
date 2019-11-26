@@ -12,6 +12,12 @@ subnet_id = aws_subnet.main-public-1.id
 
 # the security group
 vpc_security_group_ids = [aws_security_group.allow-ssh.id]
+
+#Let's give the instance a tag
+tags = {
+    Name = "Web1"
+  }
+
 }
 
 resource "aws_instance" "example2" {
@@ -23,4 +29,10 @@ subnet_id = aws_subnet.main-public-2.id
 
 # the security group
 vpc_security_group_ids = [aws_security_group.allow-ssh.id]
+
+#Let's give the instance a tag
+tags = {
+    Name = "Web2"
+  }
+
 }
