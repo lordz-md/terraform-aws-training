@@ -14,17 +14,15 @@ resource "aws_security_group" "allow-ssh" {
     to_port     = 22
     protocol    = "tcp"
     cidr_blocks = ["194.126.146.46/32"]
+    description = "Allow SSH from Endava IP Only"
   }
-  tags = {
-    Name = "allow-ssh"
-  }
+
   ingress {
     from_port   = 80
     to_port     = 80
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
+    description = "Allow HTTP"
   }
-  tags = {
-    Name = "allow-http"
-  }
+
 }
