@@ -1,1 +1,1 @@
-# terraform-aws-training
+# Repository for AWS Terraform Training
