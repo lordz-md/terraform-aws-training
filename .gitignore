@@ -1,0 +1,6 @@
+
+vars.tf
+*.ppk
+*.pub
+*.exe
+*.json
